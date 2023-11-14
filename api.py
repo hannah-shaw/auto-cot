@@ -63,8 +63,7 @@ def parse_arguments():
         "--method", type=str, default="auto_cot", choices=["zero_shot", "zero_shot_cot", "few_shot", "few_shot_cot", "auto_cot"], help="method"
     )
     parser.add_argument(
-        "--cot_trigger_no", type=int, default=1, help="A trigger sentence that elicits a model to execute chain of thought"
-    )
+        "--cot_trigger_no", type=int, default=1, help="A trigger sentence that elicits a model to execute chain of thought"   )
     parser.add_argument(
         "--max_length_cot", type=int, default=256, help="maximum length of output tokens by model for reasoning extraction"
     )
